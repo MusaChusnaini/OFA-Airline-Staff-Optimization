@@ -5,6 +5,7 @@ on:
     branches: [ "main" ]
     paths:
       - 'OFA-Console-App/**' # Pantau seluruh folder utama C#, termasuk .sln
+      - '.github/workflows/csharp-ci.yaml'
   pull_request:
     branches: [ "main" ]
     paths:
