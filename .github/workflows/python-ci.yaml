@@ -5,6 +5,7 @@ on:
     branches: [ "main" ]
     paths:
       - 'OFA-Gemini-Client/**' # Sesuaikan dengan nama folder barumu
+      - '.github/workflows/python-ci.yaml'
   pull_request:
     branches: [ "main" ]
     paths:
