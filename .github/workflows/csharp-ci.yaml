@@ -4,11 +4,11 @@ on:
   push:
     branches: [ "main" ]
     paths:
-      - 'OFA-Console-App/**'
+      - 'OFA-Console-App/OFA-Console-App/**'
   pull_request:
     branches: [ "main" ]
     paths:
-      - 'OFA-Console-App/**'
+      - 'OFA-Console-App/OFA-Console-App/**'
 
 jobs:
   build:
@@ -27,4 +27,4 @@ jobs:
       run: dotnet restore OFA-Console-App/OFA-Console-App.csproj
 
     - name: Build
-      run: dotnet build OFA-Console-App/OFA-Console-App.csproj --no-restore -c Release
+      run: dotnet build OFA-Console-App/OFA-Console-App/OFA-Console-App.csproj --no-restore -c Release
