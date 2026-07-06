@@ -4,11 +4,11 @@ on:
   push:
     branches: [ "main" ]
     paths:
-      - 'OFA-Gemini-Client**' # Hanya trigger jika folder Python disentuh
+      - 'OFA-Gemini-Client/**' # Sesuaikan dengan nama folder barumu
   pull_request:
     branches: [ "main" ]
     paths:
-      - 'OFA-Gemini-Client**'
+      - 'OFA-Gemini-Client/**'
 
 jobs:
   build:
@@ -21,15 +21,15 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
-        python-version: '3.11' # Sesuaikan dengan versimu
+        python-version: '3.11'
 
     - name: Install dependencies
       run: |
-        cd Python
+        cd OFA-Gemini-Client
         python -m pip install --upgrade pip
-        # pip install -r requirements.txt (buka komentar ini nanti kalau requirements sudah ada)
+        # pip install -r requirements.txt (buka nanti kalau file ini sudah ada)
 
-    - name: Lint with flake8 (Contoh cek kualitas kode)
+    - name: Lint with flake8
       run: |
         pip install flake8
-        flake8 OFA-Gemini-Client
+        flake8 OFA-Gemini-Client/

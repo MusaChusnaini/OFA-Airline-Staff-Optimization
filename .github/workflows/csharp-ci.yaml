@@ -4,11 +4,11 @@ on:
   push:
     branches: [ "main" ]
     paths:
-      - 'OFA-Console-App/OFA-Console-App/**'
+      - 'OFA-Console-App/**' # Pantau seluruh folder utama C#, termasuk .sln
   pull_request:
     branches: [ "main" ]
     paths:
-      - 'OFA-Console-App/OFA-Console-App/**'
+      - 'OFA-Console-App/**'
 
 jobs:
   build:
@@ -24,7 +24,7 @@ jobs:
         dotnet-version: 8.0.x
 
     - name: Restore dependencies
-      run: dotnet restore OFA-Console-App/OFA-Console-App.csproj
+      run: dotnet restore OFA-Console-App/OFA-Console-App.sln
 
     - name: Build
-      run: dotnet build OFA-Console-App/OFA-Console-App/OFA-Console-App.csproj --no-restore -c Release
+      run: dotnet build OFA-Console-App/OFA-Console-App.sln --no-restore -c Release
