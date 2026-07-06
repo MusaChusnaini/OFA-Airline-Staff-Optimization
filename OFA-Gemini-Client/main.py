@@ -47,3 +47,4 @@ def generate_ai_response(request: ChatRequest):
         }
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
