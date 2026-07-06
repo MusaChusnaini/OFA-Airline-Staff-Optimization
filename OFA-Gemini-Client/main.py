@@ -21,6 +21,7 @@ class ChatRequest(BaseModel):
     prompt: str
     temperature: float = 0.7
 
+
 @app.get("/")
 def health_cek():
     return {
@@ -42,5 +43,6 @@ def generate_ai_response(request: ChatRequest):
             "prompt": request.prompt,
             "ai_response": response.text
         }
+    
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
