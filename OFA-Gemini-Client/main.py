@@ -17,6 +17,7 @@ model = genai.GenerativeModel(ai_model)
 
 app = FastAPI(title="OFA Gemini Client Service")
 
+
 class ChatRequest(BaseModel):
     prompt: str
     temperature: float = 0.7
@@ -28,6 +29,7 @@ def health_cek():
         "status": "OFA Gemini Client is running!",
         "engine": ai_model
     }
+
 
 @app.post("/generate")
 def generate_ai_response(request: ChatRequest):
