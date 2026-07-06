@@ -1,0 +1,5 @@
+# Overview
+
+Ini adalah Repository untuk Jurnal berjudul "Optimizing Airline Staff Workload and Passenger Processing Time: A Hybrid AI-Agent and Biometric Self-Service System to Mitigate Manual Check-In Bottlenecks" yang dikerjakan dengan tujuan Skripsi akhir bersama, Repository ini berguna untuk menyimpan source code pada Program kita yang bernama "_TBA_".
+
+[![C# CI Pipeline](https://github.com/MusaChusnaini/OFA-Airline-Staff-Optimization/actions/workflows/csharp-ci.yaml/badge.svg)](https://github.com/MusaChusnaini/OFA-Airline-Staff-Optimization/actions/workflows/csharp-ci.yaml)[![Python CI Pipeline](https://github.com/MusaChusnaini/OFA-Airline-Staff-Optimization/actions/workflows/python-ci.yaml/badge.svg)](https://github.com/MusaChusnaini/OFA-Airline-Staff-Optimization/actions/workflows/python-ci.yaml)
