@@ -1,4 +1,5 @@
 .vscode/
 .vs/
+/OFA-Gemini-Client/__pycache__/
 
 .env
