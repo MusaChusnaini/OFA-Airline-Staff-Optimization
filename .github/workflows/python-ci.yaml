@@ -1,0 +1,35 @@
+name: Python CI Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+    paths:
+      - 'OFA-Gemini-Client**' # Hanya trigger jika folder Python disentuh
+  pull_request:
+    branches: [ "main" ]
+    paths:
+      - 'OFA-Gemini-Client**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11' # Sesuaikan dengan versimu
+
+    - name: Install dependencies
+      run: |
+        cd Python
+        python -m pip install --upgrade pip
+        # pip install -r requirements.txt (buka komentar ini nanti kalau requirements sudah ada)
+
+    - name: Lint with flake8 (Contoh cek kualitas kode)
+      run: |
+        pip install flake8
+        flake8 OFA-Gemini-Client

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37027.9 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OFA-Console-App", "OFA-Console-App\OFA-Console-App.csproj", "{FABEEBA1-D53C-43E5-9E53-CC5D62DC00B5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FABEEBA1-D53C-43E5-9E53-CC5D62DC00B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FABEEBA1-D53C-43E5-9E53-CC5D62DC00B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FABEEBA1-D53C-43E5-9E53-CC5D62DC00B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FABEEBA1-D53C-43E5-9E53-CC5D62DC00B5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B4E472DA-78EE-4A46-A410-C0E94DDE5C1C}
+	EndGlobalSection
+EndGlobal
